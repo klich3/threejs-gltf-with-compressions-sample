@@ -1,0 +1,245 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v2.0.5",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 46356,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 14556,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 1
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 14556,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 2
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 14556,
+      "max": [
+        30963,
+        32767,
+        29523
+      ],
+      "min": [
+        -30963,
+        -32767,
+        -29523
+      ],
+      "normalized": true,
+      "byteOffset": 116448,
+      "bufferView": 2
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 92712,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 16747,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 46356
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 92712,
+      "byteLength": 58224,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 16748,
+          "byteLength": 23097,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 14556
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 150936,
+      "byteLength": 232896,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 39848,
+          "byteLength": 144359,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 29112
+        }
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 2,
+      "sampler": 0
+    },
+    {
+      "source": 4,
+      "sampler": 0
+    },
+    {
+      "source": 3,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "uri": "DamagedHelmetMeshopt_1.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "uri": "DamagedHelmetMeshopt_2.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "uri": "DamagedHelmetMeshopt_3.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "uri": "DamagedHelmetMeshopt_4.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "uri": "DamagedHelmetMeshopt_5.jpg"
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "DamagedHelmetMeshopt.bin",
+      "byteLength": 184208
+    },
+    {
+      "byteLength": 383832,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "Material_MR",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      },
+      "emissiveFactor": [
+        1,
+        1,
+        1
+      ],
+      "emissiveTexture": {
+        "index": 1
+      },
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 3
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mesh_helmet_LP_13930damagedHelmet",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "POSITION": 3
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "node_damagedHelmet_-6514",
+      "translation": [
+        -0.0024815797805786133,
+        0.00001054536714123553,
+        -0.18715497385590668
+      ],
+      "rotation": [
+        0.7071068286895689,
+        0,
+        0,
+        0.7071067336835231
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "KHR_mesh_quantization",
+    "EXT_meshopt_compression"
+  ],
+  "extensionsRequired": [
+    "KHR_mesh_quantization",
+    "EXT_meshopt_compression"
+  ]
+}
