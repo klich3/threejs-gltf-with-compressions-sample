@@ -5,8 +5,8 @@ Base created sample with VITE
 * [x] Load GLTF
 * [x] + Draco (compress only mesh)
 * [x] + Quantize (Quantize geometry, reducing precision and memory)
-* [ ] Load KTX2
-* [ ] Load Basis
+* [x] Load KTX2
+* [x] Load Basis
 * [x] + Meshopt (compress mesh + animations)
 
 ## INSTALATION & TOOLS

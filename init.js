@@ -13,6 +13,7 @@ import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 //https://github.com/mrdoob/three.js/blob/master/examples/jsm/loaders/GLTFLoader.js
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+
 //HDR
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader";
 
@@ -29,9 +30,9 @@ export default class init {
 		//this.fileToLoad = "static/DamagedHelmetEmmbed.gltf";
 		//this.fileToLoad = "static/DamagedHelmetDraco.gltf";
 		//this.fileToLoad = "static/DamagedHelmetMeshopt.gltf";
-		this.fileToLoad = "static/DamagedHelmetDracoUltra.gltf";
+		//this.fileToLoad = "static/DamagedHelmetDracoUltra.gltf";
 		//this.fileToLoad = "static/DamagedHelmetKTX-etc1s.gltf";
-		//this.fileToLoad = "static/DamagedHelmetKTX-uastc.gltf";
+		this.fileToLoad = "static/DamagedHelmetKTX-uastc.gltf";
 
 		this.targetElement = options.targetElement;
 
@@ -119,10 +120,12 @@ export default class init {
 		//loadingManager.addHandler(/\.basis$/i, basisLoader);
 		//THREE.DefaultLoadingManager.addHandler( /\.basis$/, basisLoader );
 
+		/*
+		//This loader is Depricated
 		const basisLoader = new BasisTextureLoader();
 		basisLoader.setTranscoderPath("static/basis/");
 		basisLoader.detectSupport(this.renderer);
-
+		*/
 		/*
         basisLoader.load("static/texture.basis", (data) =>
         {
@@ -147,6 +150,7 @@ export default class init {
 		// KTX2
 		const ktxLoader = new KTX2Loader();
 		ktxLoader.setTranscoderPath("static/basis/");
+		ktxLoader.detectSupport(this.renderer);
 
 		// GLTF
 		const gltfLoader = new GLTFLoader();
